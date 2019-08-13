@@ -2955,7 +2955,7 @@ h6 {
   .social_widget .list li:last-child {
     margin-right: 0px; }
   .social_widget .list li:hover a {
-    color: #5e60aa; }
+    color: rgba(0, 0, 0, 0.3); }
 
 .copyright {
   font-size: 14px;
@@ -2994,10 +2994,8 @@ h6 {
     -webkit-filter: grayscale(0%);
             filter: grayscale(0%); }
 
-.icon {
-  height: 120px; }
-  .iconimg {
-    width: 100%; }
+.iconimg {
+  width: 100%; }
 
 .skills, .wireframe {
   width: 100%; }

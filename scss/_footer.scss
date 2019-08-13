@@ -35,7 +35,8 @@
 			}
 			&:hover{
 				a{
-					color: $primary-color;
+					//color: $primary-color;
+					color: rgba(000,000,000, 0.3);
 				}
 			}
 		}
