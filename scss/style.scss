@@ -1,0 +1,242 @@
+/*----------------------------------------------------
+@File: Default Styles
+@Author: SPONDON IT
+
+This file contains the styling for the actual theme, this
+is the file you need to edit to change the look of the
+theme.
+---------------------------------------------------- */
+
+/*=====================================================================
+@Template Name: HostHub Construction 
+@Developed By: Naim Lasker
+Author E-mail: naimlasker@gmail.com
+
+=====================================================================*/ 
+
+/*----------------------------------------------------*/
+@import "variables";
+/*---------------------------------------------------- */
+
+/*----------------------------------------------------*/
+@import "mixins";
+/*---------------------------------------------------- */
+
+/*----------------------------------------------------*/
+@import "reset";
+/*---------------------------------------------------- */
+
+/*----------------------------------------------------*/
+@import "predefine";
+/*---------------------------------------------------- */
+
+/*----------------------------------------------------*/
+@import "header";
+/*---------------------------------------------------- */
+
+/*----------------------------------------------------*/
+@import "banner";
+/*---------------------------------------------------- */
+
+/*----------------------------------------------------*/
+@import "portfolio";
+/*---------------------------------------------------- */
+
+/*----------------------------------------------------*/
+@import "blog";
+/*---------------------------------------------------- */
+
+/*----------------------------------------------------*/
+@import "contact";
+/*---------------------------------------------------- */ 
+
+/*----------------------------------------------------*/
+@import "elements";
+/*---------------------------------------------------- */
+
+/*----------------------------------------------------*/
+@import "home";
+/*---------------------------------------------------- */
+
+/*----------------------------------------------------*/
+@import "responsive";
+/*---------------------------------------------------- */
+
+/*----------------------------------------------------*/
+@import "footer";
+/*---------------------------------------------------- */
+
+
+/*
+ * Extra utilities
+ */
+
+.flex-equal > * {
+  -ms-flex: 1;
+  flex: 1;
+}
+@media (min-width: 768px) {
+  .flex-md-equal > * {
+    -ms-flex: 1;
+    flex: 1;
+  }
+}
+
+.overflow-hidden { overflow: hidden; }
+
+.desaturate{
+	filter: grayscale(100%);
+	transition: filter 0.3s ease-out;
+
+	&:hover{
+		filter: grayscale(0%);
+	}
+}
+
+
+.icon{
+    height:120px;    
+
+    &img{
+    	width:100%;
+    }
+}
+.skills, .wireframe {
+    width: 100%;
+}
+
+.skills ul, .wireframe ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.skills ul li {
+    text-align: center;
+    //width: 16.666%;
+    padding:20px;
+}
+
+.wireframe ul li {
+    text-align: center;
+    padding:10px;
+}
+
+.resize-30{
+    width:250px!important;
+}
+
+.resize-240{
+    width:240px!important;
+}
+
+.resize-550{
+    width:500px!important;
+    border:1px solid #ddd;
+}
+
+.portfolio_area img{
+	width:550px;
+	transition:all 0.8s ease;
+
+	&:hover{
+	   width:600px
+	}
+}
+
+    .linkedin-btn {
+        //background: $primary-color;
+        //border: 2px solid transparent;
+        //color: #fff;
+        background: linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+        border: 0 none;
+        display: inline-block;
+        cursor: pointer;
+        color: #333333;
+        font-family: Arial;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 5px 24px;
+        text-decoration: none;
+        text-shadow: 0px 1px 0px #ffee66;
+        text-transform:uppercase;
+        transition: background 0.3s ease!important;
+
+        &:hover {
+            background: linear-gradient(to bottom, #ffab23 5%, #ffec64  100%);
+        }
+
+        @media (max-width: 680px) {
+        font-size: 18px;
+        }
+
+    }
+    
+.go-top.active {
+    opacity: 1;
+    visibility: visible;
+    z-index: 999;
+}
+.go-top {
+    background: #000;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    line-height: 34px;
+    border-radius: 50%;
+    display: block;
+    text-align: center;
+    font-size: 26px;
+    position: fixed;
+    bottom: 2%;
+    right: 29px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.app-video {
+    margin-top: 32px;
+    width: 294px;
+    border-radius: 40px;
+    &:focus{
+        outline:none!important;
+    }
+}
+
+.web-app-video {
+    margin-top: 32px;
+    width: 992px;
+    border-radius: 10px;
+    display:block;
+    margin:0 auto;
+    &:focus{
+        outline:none!important;
+    }
+}
+
+.my-logo{
+    &:hover{
+        animation:swing 2s ease-in-out;
+    }
+}
+
+.start-link{
+    border:0 none;
+    border-radius:15px;
+    display:block;
+    padding-top:5px;
+    width: 36px;    
+    &:hover{
+        animation: bounce 2.0s ease-in-out;
+        content:"click for more";
+    }
+}
+
+@media (max-width: 360px) {
+    a.primary-btn{
+        line-height:46px;
+    }
+}
