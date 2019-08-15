@@ -89,12 +89,19 @@ $(window).on('scroll', function() {
 });
 */
 
+function getPageName(url) {
+    var index = url.lastIndexOf("/") + 1;
+    var filenameWithExtension = url.substr(index);
+    var filename = filenameWithExtension.split(".")[0]; // <-- added this line
+    return filename;                                    // <-- added this line
+}
+
 var sections = $('section')
   , nav = $('nav')
-  , nav_height = nav.outerHeight();
+  , nav_height = nav.outerHeight()
+  , curPageName = getPageName(window.location.href);
 
-
-
+  
 $(window).on('scroll', function() { 
   var cur_pos = $(this).scrollTop();
   
@@ -104,7 +111,7 @@ $(window).on('scroll', function() {
         bottom = top + $(this).outerHeight();  
     $('.mydiv1').text("Current Pos : " + cur_pos + " Sect Top : " + top + " Sect Bottom : " + bottom + " ID: " + $(this).attr("id"));
 
-    if (cur_pos >= top && cur_pos <= bottom) {
+    if (cur_pos >= top && cur_pos <= bottom && curPageName == "index") {
         $('.mydiv2').text("Current Pos : " + cur_pos + " Sect Top : " + top + " Sect Bottom : " + bottom + " ID: " + $(this).attr("id"));
 
         nav.find(".nav-item").removeClass("active");
