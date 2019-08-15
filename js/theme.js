@@ -69,33 +69,15 @@
 
 
     
-
 /*
-
 $(window).on('scroll', function() { 
     var scrollPos = $(document).scrollTop();
     $('.menu_nav .nav-item a.nav-link').each(function () {
         var currLink = $(this);        
         var refElement = $(currLink.attr("href"));
-        if (refElement.position().top <= scrollPos && refElement.position().top  + refElement.height() > scrollPos) {
-            $('.menu_nav .nav-item a.nav-link').removeClass("active");
-            currLink.addClass("active");
-            
-        }
-        else{
-            currLink.removeClass("active");
-        }
-    });
-});
-
-*/
-
-$(window).on('scroll', function() { 
-    var scrollPos = $(document).scrollTop();
-    $('.menu_nav .nav-item a.nav-link').each(function () {
-        var currLink = $(this);        
-        var refElement = $(currLink.attr("href"));
-        if (refElement.position().top <= scrollPos && refElement.position().top  + refElement.height() > scrollPos) {
+        
+        $('.my-logo').text(currLink.position().top + ',' + scrollPos + ',' + currLink.height());
+        if ((refElement.position().top <= scrollPos) && (refElement.position().top + refElement.height() > scrollPos)) {
             $('.menu_nav .nav-item').removeClass("active");
             currLink.parent(".nav-item").addClass("active");
             
@@ -105,6 +87,41 @@ $(window).on('scroll', function() {
         }
     });
 });
+*/
+
+var sections = $('section')
+  , nav = $('nav')
+  , nav_height = nav.outerHeight();
+
+
+
+$(window).on('scroll', function() { 
+  var cur_pos = $(this).scrollTop();
+  
+  
+  sections.each(function(){
+    var top = $(this).offset().top - nav_height,
+        bottom = top + $(this).outerHeight();  
+    $('.mydiv1').text("Current Pos : " + cur_pos + " Sect Top : " + top + " Sect Bottom : " + bottom + " ID: " + $(this).attr("id"));
+
+    if (cur_pos >= top && cur_pos <= bottom) {
+        $('.mydiv2').text("Current Pos : " + cur_pos + " Sect Top : " + top + " Sect Bottom : " + bottom + " ID: " + $(this).attr("id"));
+
+        nav.find(".nav-item").removeClass("active");
+        var listToHighlight = nav.find('a[href="#' + $(this).attr('id') + '"]');
+        $('.mydiv3').text("List to hilight : " + listToHighlight.attr('class') + " Parent : " + listToHighlight.parent().attr("class"));
+        //listToHighlight.parent().addClass("active");
+
+
+        nav.find('a[href="#' + $(this).attr('id') + '"]').parent().addClass("active");
+        }
+
+  });
+
+});
+
+
+
 
 
   /*=================================
