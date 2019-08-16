@@ -333,7 +333,6 @@ button:focus {
   background-repeat: no-repeat;
   background-position: center -140px !important;
   margin-bottom: 10px;
-  height: 100vh;
   box-sizing: border-box;
   position: relative;
   width: 100%; }
@@ -2904,15 +2903,23 @@ h6 {
   /* End Main Menu Area css
     ============================================================================================ */ }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media screen and (max-device-width: 640px) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1366px) {
+  #home .banner-content h1 {
+    font-size: 60px !important; }
+  #home .banner-content .linkedin-btn {
+    font-size: 20px;
+    line-height: 32px; } }
+
+@media screen and (min-device-width: 360px) and (max-device-width: 640px) {
   #home .banner-content {
     padding-top: 20px; }
     #home .banner-content h1 {
       font-size: 180% !important; }
     #home .banner-content .linkedin-btn {
       font-size: 16px;
-      line-height: 32px; } }
+      line-height: 32px; }
+    #home .banner-content .banner-area .single_slide_banner {
+      height: auto !important; } }
 
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
