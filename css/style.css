@@ -419,7 +419,8 @@ button:focus {
     background-image: url(https://3.bp.blogspot.com/-qyCQEQC3Zno/XOTfhs14ncI/AAAAAAAAHOY/QnSMttSN8ewyqnEk0322zJEd6cAPjydSACLcBGAs/s1600/bg05.jpg);
     background-attachment: fixed;
     background-size: cover;
-    background-position: center -240px;
+    background-position: center top;
+    background-repeat: no-repeat;
     z-index: 1; }
     .banner_area .banner_inner:before {
       content: "";
