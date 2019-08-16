@@ -2911,7 +2911,8 @@ h6 {
     #home .banner-content h1 {
       font-size: 180% !important; }
     #home .banner-content .linkedin-btn {
-      font-size: 16px; } }
+      font-size: 16px;
+      line-height: 32px; } }
 
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
