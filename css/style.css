@@ -2925,6 +2925,13 @@ h6 {
   /* End Main Menu Area css
     ============================================================================================ */ }
 
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media screen and (max-device-width: 640px) {
+  #home .banner-content {
+    padding-top: 20px; }
+    #home .banner-content h1 {
+      font-size: 180% !important; } }
+
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
 /* Footer Area css
