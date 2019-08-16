@@ -6,12 +6,11 @@
         background-repeat: no-repeat;
         background-position:center -140px !important;            
         margin-bottom: 10px;
-        height: 100vh;
+        //height: 100vh;
         box-sizing: border-box;
         position: relative;
         width: 100%;
-
-
+        
         &:before{
         content: "";
         position: absolute;

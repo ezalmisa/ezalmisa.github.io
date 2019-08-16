@@ -91,8 +91,27 @@
     ============================================================================================ */
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media screen and (max-device-width: 640px) {
+
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1366px)  { 
+
+#home .banner-content{
+        & h1{
+            font-size:60px!important;
+        }  
+        & .linkedin-btn{
+            font-size:20px;
+            line-height:32px;
+        }
+
+    }
+}
+
+@media screen 
+and (min-device-width: 360px)
+and (max-device-width: 640px) {
     
     #home .banner-content{
         padding-top:20px;
@@ -105,9 +124,16 @@
             font-size:16px;
             line-height:32px;
         }  
+
+        & .banner-area .single_slide_banner{
+            height: auto!important;
+        }
+
     }
 
     
 
     
 }
+
+
