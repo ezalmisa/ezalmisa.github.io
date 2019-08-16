@@ -159,7 +159,7 @@ button:focus {
   font-family: "Roboto", sans-serif;
   font-size: 15px;
   font-weight: 500;
-  line-height: 46px;
+  line-height: 32px;
   padding: 0 40px;
   outline: none !important;
   text-align: center;
@@ -373,28 +373,6 @@ button:focus {
       padding: 48px 20px;
       background: transparent;
       margin: 0 15px; } }
-  .banner-content .primary-btn {
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #ffec64), to(#ffab23));
-    background: linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
-    border: 0 none;
-    display: inline-block;
-    cursor: pointer;
-    color: #333333;
-    font-family: Arial;
-    font-size: 20px;
-    font-weight: bold;
-    padding: 5px 24px;
-    text-decoration: none;
-    text-shadow: 0px 1px 0px #ffee66;
-    text-transform: uppercase;
-    -webkit-transition: background 0.3s ease !important;
-    transition: background 0.3s ease !important; }
-    .banner-content .primary-btn:hover {
-      background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #ffab23), to(#ffec64));
-      background: linear-gradient(to bottom, #ffab23 5%, #ffec64 100%); }
-    @media (max-width: 680px) {
-      .banner-content .primary-btn {
-        font-size: 18px; } }
   .banner-content .myprofileimg {
     border-radius: 50%;
     width: 140px !important;
@@ -3050,7 +3028,7 @@ h6 {
   font-family: Arial;
   font-size: 20px;
   font-weight: bold;
-  padding: 5px 24px;
+  padding: 10px 24px;
   text-decoration: none;
   text-shadow: 0px 1px 0px #ffee66;
   text-transform: uppercase;
@@ -3059,9 +3037,6 @@ h6 {
   .linkedin-btn:hover {
     background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #ffab23), to(#ffec64));
     background: linear-gradient(to bottom, #ffab23 5%, #ffec64 100%); }
-  @media (max-width: 680px) {
-    .linkedin-btn {
-      font-size: 18px; } }
 
 .go-top.active {
   opacity: 1;
@@ -3114,10 +3089,6 @@ h6 {
     -webkit-animation: bounce 2.0s ease-in-out;
             animation: bounce 2.0s ease-in-out;
     content: "click for more"; }
-
-@media (max-width: 360px) {
-  a.primary-btn {
-    line-height: 46px; } }
 
 .my-logo {
   font-size: 14px;
