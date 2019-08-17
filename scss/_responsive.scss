@@ -135,3 +135,10 @@ and (max-device-width: 640px) {
 
 }
 
+@media screen 
+and (min-device-width: 768px)
+and (max-device-width: 1024px) {
+    .banner-area .single_slide_banner{
+        height:650px;
+    }
+}
