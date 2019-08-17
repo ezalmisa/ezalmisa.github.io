@@ -111,8 +111,8 @@ $(window).on('scroll', function() {
         bottom = top + $(this).outerHeight();  
     $('.mydiv1').text("Current Pos : " + cur_pos + " Sect Top : " + top + " Sect Bottom : " + bottom + " ID: " + $(this).attr("id"));
 
-    if (cur_pos >= top && cur_pos <= bottom && curPageName == "index") {
-        $('.mydiv2').text("Current Pos : " + cur_pos + " Sect Top : " + top + " Sect Bottom : " + bottom + " ID: " + $(this).attr("id"));
+    if (cur_pos >= top && cur_pos <= bottom && location.search == "") {
+        $('.mydiv2').text("Cur Page Name : " + window.location.href + " Current Pos : " + cur_pos + " Sect Top : " + top + " Sect Bottom : " + bottom + " ID: " + $(this).attr("id"));
 
         nav.find(".nav-item").removeClass("active");
         var listToHighlight = nav.find('a[href="#' + $(this).attr('id') + '"]');
