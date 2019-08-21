@@ -280,3 +280,30 @@ Author E-mail: naimlasker@gmail.com
     }
 
 }
+
+.has-float-label label, .has-float-label>span {
+    left:10px;
+
+}
+
+.has-float-label input, .has-float-label select, .has-float-label textarea {
+    border: 1px solid #eeeeee;
+    width:100%;
+    padding-left:10px;
+}
+
+.has-float-label input:placeholder-shown:not(:focus)+*
+, .has-float-label select:placeholder-shown:not(:focus)+*
+, .has-float-label textarea:placeholder-shown:not(:focus)+*{
+    font-size:100%;
+    top: 0.5em;
+
+}
+
+.has-float-label input::placeholder,
+.has-float-label select::placeholder,
+.has-float-label textarea::placeholder{
+    color:#fff;
+    
+
+}
