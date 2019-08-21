@@ -14,6 +14,8 @@
 
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="https://cdn.rawgit.com/tonystar/float-label-css/v1.0.2/dist/float-label.min.css">
+
 	<link rel="stylesheet" href="vendors/linericon/style.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<!--
@@ -125,7 +127,7 @@
 		  <div class="bg-white mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
 		    <div class="my-3 py-3">
 		      <h2 class="display-5">InspectPro Web Application</h2>
-		      <p class="lead">UI/UX Design &#9900; Frontend Development &#9900; Branding</p>
+		      <p class="lead">UI/UX Design &#9900; Frontend Development &#9900;</p>
 		    </div>
 		    <div class="bg-white mx-auto">
 		    	<a href="02-inspectpro-web-app.html">
@@ -156,16 +158,37 @@
 		    </div>
 		  </div>
 		  <div class="bg-white mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+		    <div class="my-3 py-3">
+		      <h2 class="display-5">JPWP Multimedia Kiosk</h2>
+		      <p class="lead">UX/UI Design &#9900; Flash Design &amp; Development</p>
+		    </div>
+		    <div class="bg-white mx-auto">
+		    	<a href="03-website-design.html"><img src="/img/works/jpwp-kiosk.png" width="550px" class="img-fluid mx-auto"/></a>
+		    </div>
+		  </div>
+		</div>
+		<div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+		  <div class="bg-white mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+		    <div class="my-3 p-3">
+		      <h2 class="display-5">Azmi Law Official Website</h2>
+		      <p class="lead">Website Design &amp; Development</p>
+		    </div>
+		    <div class="bg-white mx-auto">
+		    	<img src="/img/works/azmilaw-01.png" width="550px" class="img-fluid mx-auto"/>
+		    </div>
+		  </div>
+		  <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
 		    <div class="my-3 p-3">
 		      <h2 class="display-5">Desktop Publishing</h2>
 		      <p class="lead">Graphics Design &#9900; Marketing</p>
 		    </div>
-		    <div class="bg-white mx-auto">
+		    <div class="bg-light mx-auto">
 		    	<img src="/img/works/CERTIFICATE-GANO.png" width="550px" class="img-fluid mx-auto"/>
-
-		    </div>
+		    </div>		    
 		  </div>
+		  
 		</div>	
+	
 
 
 	</section>
@@ -248,8 +271,8 @@ Through the 15-years of career path journey in the information technology indust
 		</div>
         <div class="container">
             <div class="row">
-                <div class="col-lg-3">
-                    <div class="contact_info">
+                <div class="col-lg-12">
+                    <div class="contact_info d-flex mx-auto justify-content-around">
                         <div class="info_item">
                             <i class="lnr lnr-home"></i>
                             <h6>Perak, Malaysia</h6>
@@ -258,32 +281,36 @@ Through the 15-years of career path journey in the information technology indust
                         <div class="info_item">
                             <i class="lnr lnr-phone-handset"></i>
                             <h6><a href="#">+6011-60845581</a></h6>
-                            <p>Mon to Fri 9am to 6 pm</p>
+                            <p>Mon to Fri 9am to 6 pm (GMT+8)</p>
                         </div>
                         <div class="info_item">
                             <i class="lnr lnr-envelope"></i>
                             <h6><a href="#">ezalmisa7905@gmail.com</a></h6>
-                            <p>Send us your query anytime!</p>
+                            <p>Reach me to discuss anything!</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-9">
+                <div class="col-lg-12">
                     <form class="row contact_form" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
                         <div class="col-md-6">
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
-                            </div>
-                            <div class="form-group">
-                                <input type="email" class="form-control" id="email" name="email" placeholder="Enter email address">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="subject" name="subject" placeholder="Enter Subject">
-                            </div>
+                        	<label class="has-float-label">
+							  <input type="email" placeholder="email@example.com" name="email"/>
+							  <span>Email</span>
+							</label>
+							<label class="has-float-label">
+							  <input type="text" placeholder="Enter your name" name="name"/>
+							  <span>Name</span>
+							</label>
+							<label class="has-float-label">
+							  <input type="text" placeholder="Subject" name="name"/>
+							  <span>Subject</span>
+							</label>                            
                         </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <textarea class="form-control" name="message" id="message" rows="1" placeholder="Enter Message"></textarea>
-                            </div>
+                        <div class="col-md-6">                            
+                            <label class="has-float-label">
+							  <textarea name="message" id="message" rows="5" placeholder="Enter Message"></textarea>
+							  <span>Subject</span>
+							</label>
                         </div>
                         <div class="col-md-12 text-right">
                             <button type="submit" value="submit" class="primary-btn"><span>Send Message</span></button>
