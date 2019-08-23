@@ -11,6 +11,7 @@
   $(".fitscreen").css("height", fitscreen);
 
   var nav_offset_top = $("header").height() + 50;
+
   /*-------------------------------------------------------------------------------
 	  Navbar 
 	-------------------------------------------------------------------------------*/
@@ -67,27 +68,8 @@
       }
     });
 
+   
 
-    
-/*
-$(window).on('scroll', function() { 
-    var scrollPos = $(document).scrollTop();
-    $('.menu_nav .nav-item a.nav-link').each(function () {
-        var currLink = $(this);        
-        var refElement = $(currLink.attr("href"));
-        
-        $('.my-logo').text(currLink.position().top + ',' + scrollPos + ',' + currLink.height());
-        if ((refElement.position().top <= scrollPos) && (refElement.position().top + refElement.height() > scrollPos)) {
-            $('.menu_nav .nav-item').removeClass("active");
-            currLink.parent(".nav-item").addClass("active");
-            
-        }
-        else{
-            currLink.removeClass("active");
-        }
-    });
-});
-*/
 
 function getPageName(url) {
     var index = url.lastIndexOf("/") + 1;
@@ -154,6 +136,7 @@ $(window).on('scroll', function() {
     dots: true,
     responsiveClass: true
   });
+
   */
   /*----------------------------------------------------*/
   /*  MailChimp Slider
@@ -402,4 +385,7 @@ $(window).on('scroll', function() {
       ]
     });
   }
+  
+$('[data-toggle="tooltip"]').tooltip();
+
 })(jQuery);
