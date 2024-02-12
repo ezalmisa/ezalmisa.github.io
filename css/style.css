@@ -353,7 +353,7 @@ button:focus {
 
 .banner-area .slide_bg1 {
   background: url(https://3.bp.blogspot.com/-qyCQEQC3Zno/XOTfhs14ncI/AAAAAAAAHOY/QnSMttSN8ewyqnEk0322zJEd6cAPjydSACLcBGAs/s1600/bg05.jpg);
-  background-attachment: fixed; }
+  background-attachment: fixed; background-size:cover;}
 
 .banner-area .slide_bg2 {
   background: url(../img/banner/banner-bg3.jpg); }
